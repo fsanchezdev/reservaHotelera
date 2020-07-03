@@ -1,0 +1,288 @@
+nav {
+    background-image: url(../img/sky2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+
+.pestanias div {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+form div:nth-child(1),
+form div div:nth-child(2) {
+    flex-shrink: 3;
+}
+
+form div div:nth-child(3) {
+    flex-shrink: 1;
+}
+
+form div div:nth-child(4) {
+    flex-shrink: 2;
+}
+
+#room{
+    overflow: auto;
+}
+
+.pestanias div:first-child {
+    background-color: #FFCF03;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 8px;
+}
+
+
+.pestanias div:last-child {
+    background-color: #135E8A;
+    color: white;
+    margin-top: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+form>div>div {
+    border: 5px solid #FFCF03;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    background-color: white;
+}
+
+
+
+#checkin,
+#nights,
+#room {
+    font-weight: bold;
+}
+
+form div div:first-child {
+    flex-basis: 38%;
+    border-bottom-left-radius: 5px;
+}
+
+form div div:nth-child(2),
+form div div:nth-child(3) {
+    flex-basis: 16%;
+}
+
+form div div:last-child {
+    flex-basis: 30%;
+    border-bottom-right-radius: 5px;
+}
+
+input[type="text"] {
+    color: lightslategray;
+    width: 90%;
+    border: none;
+}
+
+form div:nth-child(3) p {
+
+    margin: 0px;
+}
+
+.roomCard p {
+    color: forestgreen !important;
+    margin: 0px;
+    display: inline;
+    padding: 0px;
+}
+
+
+
+.roomCard div:first-child{
+   display: flex;
+   justify-content: flex-start;
+}
+.roomCard div:first-child span {
+    background: forestgreen !important;
+    border-radius: 50% !important;
+    color: white !important;
+    display: inline-block;
+    padding: 0px;
+    line-height: 1.6em;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    width: 1.6em;
+    display: inline-block;
+}
+
+.roomCard:last-child  {
+    text-align: right;
+  
+} 
+
+
+
+.roomCard:last-child>div:first-child{
+    min-height: 8em;
+    min-width: 8em;
+    background-color: #E8F4FC;
+    padding-top: 2em;
+    flex-direction: column;
+}
+
+.roomCard:last-child>div:first-child:hover,.close:hover,.roomCard:last-child>p:hover,[type="button"]:hover{
+    cursor: pointer ;
+}
+
+.roomCard:last-child div:first-child span {
+    background-color:  #1C94D9 !important;
+    line-height: 1.2em;
+    width: 1.2em;
+    font-size:2.4em;
+     
+    
+} 
+.roomCard:last-child div:first-child p,.roomCard:last-child p {
+    color:  #1C94D9 !important;
+    font-weight: bold;
+} 
+
+.subtituloEdad {
+    display: block;
+    font-size: 0.7em;
+    color: lightslategray;
+}
+
+.infoChild {
+    color: lightslategray;
+}
+
+[type="Date"] {
+    background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
+
+}
+
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.roomCard div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.roomCard div,
+select {
+    padding: 5px;
+}
+ .roomsContainer.show  {
+  display: flex;
+}
+.roomsContainer .roomCard .infoChild {
+
+ white-space: normal;
+font-size: 0.8em;
+}
+.close{
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+
+.roomCard .subtituloEdad {
+    padding-top: 0px;
+}
+
+.roomCard div span {
+    padding-right: 10px;
+}
+
+.roomCard {
+    padding: .25rem 1.5rem;
+    min-width: 12em;
+    position: relative;
+}
+
+.roomCard:not(:last-child) {
+    border-right: 1px solid gray;
+}
+option{
+    color:initial;
+    background-color: white;
+}
+option:checked{
+    background-color: white;
+}
+.ageRow>select{
+    color:white;
+    background-color: orangered;
+    border-style: none;
+    margin: 5px;
+}
+
+/*
+.dropdown .dropdown{
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.dropdown .dropdown .dropdown-toggle{
+    color:white;
+    background-color: orangered;
+    padding: 8px;
+    border-radius: 0px;
+
+}*/
+
+form>input {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: orangered;
+    color: white;
+    border-style: none;
+    flex-basis: 10%;
+    border-radius: 5px;
+}
+
+form>* {
+    box-shadow: 3px 3px 5px 0px rgba(125, 125, 125, 1);
+}
+
+.dropdown a {
+    color: black;
+    text-decoration: none;
+}
+
+#checkin,#checkin:active {
+    outline: none;
+    border: none;
+}
+
+label {
+    margin-bottom: 0px;
+}
+
+form,
+#container {
+    display: flex;
+
+
+}
+
+
+#container {
+    flex-basis: 80%;
+}
+
+label {
+    display: block;
+}
